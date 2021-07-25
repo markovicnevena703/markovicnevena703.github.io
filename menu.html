@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> CSS Menu</title>
+    <style>
+        .menu{
+            position:absolute;
+            height: 100%;
+            background-color: lightblue;
+            
+          
+           
+        }
+
+        .menu-item {
+            text-align: center;
+            position: relative;
+            padding: 10px 50px 10px 50px;
+            cursor: pointer;
+            display: block;
+            
+            
+        }
+    
+        .menu-item:hover{
+          background-color: lightcoral;
+         
+
+        }
+
+        .dropdown{
+            
+            background-color: lightblue;
+            position: absolute;
+            top: 0px;
+            left: 100%;
+            display:none;
+            
+
+        }
+
+        .menu-item:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown-item{
+            white-space: nowrap;
+            padding: 10px 50px 10px 50px;
+            
+        }
+
+        .dropdown-item:hover{
+            background-color: lightcoral;
+        }
+
+        .dropdown-item a {
+            text-decoration: none;
+            color: black;
+            
+        }
+
+
+        
+
+        .body{
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class = "menu"> 
+    <div class = "menu-item">
+        Menu 1
+    <div class = "dropdown">
+
+        <div class="dropdown-item"> Dropdown item</div>
+        <div class="dropdown-item"> Dropdown item</div>
+        <div class="dropdown-item"> Dropdown item</div>
+        <div class="dropdown-item"> Dropdown item</div>
+    </div>
+    </div>
+    <div class = "menu-item">
+        Menu 2
+        <div class = "dropdown">
+            <div class="dropdown-item"> Dropdown item</div>
+            <div class="dropdown-item"> Dropdown item</div>
+            <div class="dropdown-item"> Dropdown item</div>
+        </div>
+    </div>
+    <div class = "menu-item"> 
+        Menu 3
+        <div class = "dropdown">
+            <div class="dropdown-item"> Dropdown item</div>
+            <div class="dropdown-item"> <a href = "http://google.com"> Google.com </a></div>
+        </div>
+    </div>
+</div>
+</body>
+
+
+</html>
